@@ -112,8 +112,8 @@ def draw_parallel_lines(n, point, length, window):
     import rosegraphics as rg
     y = point.y
     for k in range(n):
-        start=rg.Point(point.x, y-30*k)
-        end = rg.Point(point.x+length,y-30*k)
+        start=rg.Point(point.x, y+30*k)
+        end = rg.Point(point.x+length,y+30*k)
         line = rg.Line(start,end)
         line.attach_to(window)
     window.render()
